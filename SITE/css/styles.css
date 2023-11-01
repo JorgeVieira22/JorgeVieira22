@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* display: inline; */
+    justify-content: center;
+    align-items: center;
     background-color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 0;
 }
 
 #menu{
@@ -49,31 +52,25 @@ footer {
 CSS do slide
 */
 
-.slideshow-container {
-    position: relative;
-    max-width: 1000px;
-    margin: auto;
+.slider {
+    display: flex;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.mySlides {
-    display: none;
+.slides {
+    width: auto;
+    height: auto;
+    display: flex;
 }
 
-img {
-    width: 100%;
+.slide {
+    transition: 2s;
 }
 
-/* Estilos para os pontos indicadores (opcional) */
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.active {
-    background-color: #717171;
+.slide img {
+    width: 800px;
+    height: 500px;
 }
