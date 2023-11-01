@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#menu{
+    list-style: none;
+    padding: 0;
+    background-color: #333;
+}
+
+#menu li{
+    display: inline;
+}
+
+#menu li a{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    transition: background .4s;
+}
+
+#menu li a:hover{
+    background-color: rgb(24, 139, 233);
+}
+
+#menu li:last-child a{
+    float: right;
+    background-color: rgb(24, 139, 233);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 
+CSS do slide
+*/
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Estilos para os pontos indicadores (opcional) */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active {
+    background-color: #717171;
+}
