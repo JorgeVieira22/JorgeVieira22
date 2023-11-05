@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    /* display: inline; */
+    display: f;
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
@@ -53,10 +53,10 @@ CSS do slide
 */
 
 .slider {
-    display: flex;
+    box-decoration-break: inherit;
     width: auto;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0;
     overflow: hidden;
 }
 
@@ -72,5 +72,11 @@ CSS do slide
 
 .slide img {
     width: 800px;
-    height: 500px;
+    height: 400px;
+    transition: all 0.2s ease;
+}
+
+.slides input{
+    display: none;
+
 }
