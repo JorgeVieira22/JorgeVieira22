@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title> J. V. ELETRO </title>
+
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 
 <body>
@@ -23,49 +26,26 @@
 
   
     <section>
-          <!--Slider start-->
-        <div class="slider">
-            <!--Slides Start-->
-            <div class="slides"></divclass>
-
-                <!--Butões start-->
-                <input type="radio" name="Bot1" id="bt1">
-                <input type="radio" name="Bot2" id="bt2">
-                <input type="radio" name="Bot3" id="bt3">
-                <input type="radio" name="Bot4" id="bt4">
-                <input type="radio" name="Bot5" id="bt5">
-                <!--Butões end-->
-
-                <!--Slide Start-->
-                <div class="slides frist">
-                    <img src="img/banner/1.png" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img src="img/banner/2.png" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img src="img/banner/3.png" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img src="img/banner/4.png" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img src="img/banner/5.png" style="width:100%">
-                </div>
-                <!--Slide end-->
-
-            </div>
-            <!--slides end-->
-
-        </div>
         <!--Slider start-->
-        
-    </section>
+        <div class="slideshow-container">
+            <img class="mySlides fade" src="img/banner/1.png" style="width:100%">
+            <img class="mySlides fade" src="img/banner/2.png" style="width:100%">
+            <img class="mySlides fade" src="img/banner/3.png" style="width:100%">
+            <img class="mySlides fade" src="img/banner/4.png" style="width:100%">
+            <img class="mySlides fade" src="img/banner/5.png" style="width:100%">
+        </div>
+        <!--Slide end-->     
 
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>      
+
+    </section>
 
     <footer>
         <p>&copy; 2023 J.V.ELETRO. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="./js/slideshow.js"></script>
 </body>
 
 </html>
