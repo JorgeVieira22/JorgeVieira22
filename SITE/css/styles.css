@@ -52,32 +52,41 @@ footer {
 CSS do slide
 */
 
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    top: 130px;
-    left: -50px;
-    margin: auto;
-  }
 
-  .mySlides {
-    display: none;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
+.slide {
+  max-width: 100%;
+  position: relative;
+  top: 10px;
+  left: auto;
+  background: rgba(94, 87, 87, 0.11);
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: center;
+  margin: auto;
+}
+
+
+
+.mySlides {
+  display: none;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
   .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 26%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
+    padding: 5px;
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 1px 1px 0;
     user-select: auto;
   }
     
@@ -90,5 +99,5 @@ CSS do slide
   /* Posicionamento dos botões */
   .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 1px 0 0 1px;
   }
