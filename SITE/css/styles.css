@@ -48,6 +48,34 @@ footer {
     width: 100%;
 }
 
+.container {
+  background-color: #333;
+  position: relative;
+  top: 20px;
+  left: auto;
+  width: 100%; /* Ajuste a largura conforme necessário */
+  height: auto;
+  margin: 0 auto; /* Centraliza o container */
+}
+
+.img123 {
+  clear: both;
+  background-color: #333;
+  float: left; /* Faz a imagem flutuar para a esquerda */
+  width: 25%; /* Ajuste a largura da imagem */
+  margin-right: 20px; /* Cria um espaço entre a imagem e o texto */
+}
+
+.texto {
+  overflow: hidden; /* Para evitar que o texto fique sobreposto à imagem */
+  position: relative;
+  top: auto;
+  left: 10%;
+  width: 30%;
+  height: 100%;
+  color: #ffffff;
+  background-color: #333;
+}
 /* 
 CSS do slide
 */
