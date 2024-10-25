@@ -1,27 +1,29 @@
-var slideIndex = 0;
-showSlides();
+let slideIndex = 0;
+showSlides(slideIndex);
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
+function showSlides(n) {
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length - 1) {slideIndex = 0} 
+  if (n < 0) {slideIndex = slides.length - 1} 
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex].style.display = "block";  
+}
 
-    slideIndex++;
+// Inicia o slideshow automaticamente a cada 2 segundos
+let autoplay = setInterval(function(){plusSlides(1)}, 10000);
 
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
+// Para pausar o slideshow ao passar o mouse sobre o container:
+slideshowContainer.addEventListener('mouseover', function() {
+  clearInterval(autoplay);
+}
 
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-
-    setTimeout(showSlides, 2000); // Muda a imagem a cada 2 segundos (2000 milissegundos)
+// Para reiniciar o slideshow ao tirar o mouse do container:
+slideshowContainer.onmouseout = function(){
+  autoplay = setInterval(function(){plusSlides(1)}, 10000);
 }
