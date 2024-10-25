@@ -52,7 +52,7 @@ footer {
 table {
   border:3px solid rgba(255, 255, 255, 0.788);
   border-radius: 5px;
-  background-color: rgba(155, 155, 155, 0.11);
+  background-color: rgb(255, 254, 254);
   align-items: right;
   width: 100%;
   height: auto;
@@ -102,8 +102,8 @@ CSS do slide
   position: relative;
   top: 10px;
   left: auto;
-  background: rgba(94, 87, 87, 0.11);
-  border:3px solid rgba(255, 255, 255, 0.788);
+  background: rgba(255, 255, 255, 0.11);
+  border:3px solid rgb(255, 255, 255);
   border-radius: 5px;
 
 }
